@@ -29,13 +29,13 @@ async function loadItems() {
     document.getElementById("row").innerHTML = body;
 }
 
-async function search(){
-    let countrySearch = document.getElementById("country").value;
+// async function search(){
+//     let countrySearch = document.getElementById("country").value;
 
-    if(countrySearch==element.name.common){
-        
-    }
+//     fetch("https://restcountries.com/v3.1/name/{name}")
+//     .then(res=>res.json())
+
 
 
     
-}
+// }
