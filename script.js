@@ -42,7 +42,7 @@ function countrySearch() {
                         <h5 class="card-title text-center text-primary fw-bold">${element.name.common}</h5>
                         <p class="card-text"></p>
                         <ul>
-                              <li>Currency : ${element.currencies.XCD.name}</li>
+                              
                               <li>Capital : ${element.capital}</li>
                               <li>Region : ${element.region}</li>
                                   <ul>
