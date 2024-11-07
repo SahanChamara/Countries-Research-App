@@ -32,15 +32,26 @@ function countrySearch() {
       data.forEach(element => {
         body += `
                   <div>
-                  <div class="card mb-3 mx-auto" style="max-width: 540px;">
+                  <div class="card mb-5 mx-auto" style="max-width: 540px;">
                       <div class="row g-0">
-                        <div class="col-md-4">
+                        <div class="col-md-10 text-center mx-auto p-1">
                           <img src=${element.flags.png} class="img-fluid rounded-start" alt="...">
                       </div>
-                    <div class="col-md-8">
+                    <div class="col-md-15">
                       <div class="card-body">
-                        <h5 class="card-title">${element.name.common}</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h5 class="card-title text-center text-primary fw-bold">${element.name.common}</h5>
+                        <p class="card-text"></p>
+                        <ul>
+                              <li>Currency : ${element.currencies.XCD.name}</li>
+                              <li>Capital : ${element.capital}</li>
+                              <li>Region : ${element.region}</li>
+                                  <ul>
+                                      <li>Subregion : ${element.subregion}</li>
+                                  </ul>
+                              <li>Languages : ${element.languages}</li>
+                              <li>Population : ${element.population}</li>
+                              <li>Timezones : ${element.timezones}</li>
+                        </ul>
                         <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                       </div>
                   </div>
