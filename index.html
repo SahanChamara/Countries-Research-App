@@ -23,8 +23,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Search</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
                 </ul>
             </div>
@@ -52,24 +52,46 @@
                     <nav class="btn-danger ">
                         <div class="container-fluid ">
                             <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Search</button>
+                                <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search"
+                                    id="countryName">
+                                <input type="button" value="Search" data-bs-toggle="modal" data-bs-target="#allCountry"
+                                    onclick="countrySearch()">
                             </form>
                         </div>
                     </nav>
                     </p>
                 </div>
             </div>
-            <img class="img-fluid" src="assets/img/ipad.png" alt="..." />
+            <!-- <img class="img-fluid" src="assets/img/ipad.png" alt="..." /> -->
         </div>
     </section>
+
+
+    <!-- Modal (search country popup) -->
+    <div class="modal fade" id="allCountry" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 mx-auto text-bg-warning" id="exampleModalLabel">Explore Nations</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="serachCountryBody">
+
+                            <!--Api result connecting...........-->
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Projects-->
     <section class="projects-section bg-light" id="projects">
         <div class="container">
-            <div class="row text-center" id="row">
-                                
+            <div class="row text-center" id="row"> <!--api connect -->
             </div>
-
         </div>
 
 

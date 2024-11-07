@@ -18,11 +18,23 @@ async function allConutry() {
                 </div>`
   });
 
-  document.getElementById("row").innerHTML=body;
+  document.getElementById("row").innerHTML = body;
 }
 
-function countrySearch(){
-  
+function countrySearch() {
+  let countryName = document.getElementById("countryName").value;
+  console.log(countryName);
+
+  fetch(`https://restcountries.com/v3.1/name/${countryName}`)
+  .then(res=>res.json())
+  .then(data=>{
+    let body="";
+    data.forEach(element => {
+      body+=``
+    });
+    document.getElementById("serachCountryBody").innerHTML = body;
+  })
+
 }
 
 
